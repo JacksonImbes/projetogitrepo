@@ -1,14 +1,15 @@
-import React from "react";
-
+import React from 'react';
+import { createRoot } from 'react-dom';
 import Routes from './routes';
 import GlobalStyle from './styles/global';
 
-export default function App(){
-  return(
+function App() {
+  return (
     <>
+      <GlobalStyle/>
       <Routes/>
-      <GlobalStyle />
     </>
-    
   );
 }
+
+export default App;

@@ -1,16 +1,16 @@
 import React from "react";
-import { BrowserRouter, Route, Routes as RoutesRD } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Main from "./pages/Main";
 import Repositorio from "./pages/Repositorio";
 
-export default function Routes(){
+export default function RoutesComponent(){ 
     return(
         <BrowserRouter>
-            <RoutesRD>
+            <Routes>
                 <Route exact path="/" element={<Main/>}/>
-                <Route path="/repositorio/:repositorio" element={<Repositorio/>}/>
-            </RoutesRD>
+                <Route path="/repositorio/:repositorio" element={<Repositorio />} />
+            </Routes>
         </BrowserRouter>
     );
 }
